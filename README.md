@@ -54,3 +54,10 @@ User entry options: 1. An integer representing a Congress member shown on the sc
 #### 5. Wanna open the Twitter page on a web browser? Enter 'exit' to quit or enter anything else to browse. 
 
 User entry options: 1. 'exit' 2. Anything else
+
+
+## Data Structure
+The cached Congress members' data is organized into a tree-structured nested dictionary. The first-level keys comprise 4 Congress (114-117). The second-level keys comprise 2 chambers (senate and house). The third-level keys comprise 50 US state abbreviations. The fourth-level keys comprise the Twitter accounts of the Congress member affiliated with the state. The fifth-level keys comprise the information of the congress member. Specifically, keys for senators are 'first_name', 'last_name', 'party' 'gender', 'votes_with_party_pct', and 'state_rank', while keys for representatives are  'first_name', 'last_name', 'party', 'gender', 'votes_with_party_pct', and 'district'.
+
+The 'tree' is structured as below:
+![image](https://user-images.githubusercontent.com/97130059/207971466-edc707bb-d8f0-4e33-8505-44683c8cd5c8.png)
