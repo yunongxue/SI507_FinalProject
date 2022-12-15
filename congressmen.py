@@ -125,8 +125,8 @@ def congress_query():
         The number of the Congress
     '''
     while True:
-      congress = input("Please enter the number of Congress of your interest [(114-117) avaiable], or enter 'exit' to quit: ")
-      if congress == 'exit':
+      congress = input("Please enter a Congress number of your interest [(114-117) available], or enter 'exit' to quit: ")
+      if congress.lower() == 'exit':
         print("Bye!")
         sys.exit(0)
       elif congress.isnumeric() is False:
@@ -157,7 +157,7 @@ def chamber_query():
     while True:
       chamber = input("Which chamber are you looking for? Enter 'senate' or 'house', or enter 'exit' to quit: ")
       
-      if chamber == 'exit':
+      if chamber.lower() == 'exit':
         print("Bye!")
         sys.exit(0)
       elif chamber.lower() not in ['senate', 'house']:
@@ -189,7 +189,7 @@ def state_query():
         \n 2. Enter 'no' to return all members.\
         \n 3. Enter 'exit' to quit.\
         \n: ")
-        if state == 'exit':
+        if state.lower() == 'exit':
             print("Bye!")
             sys.exit(0)
         elif state.lower() != "no" and state.upper() not in  ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", 
@@ -345,7 +345,7 @@ def execute():
     while True:
         member_code = input(f"Which congressman are you interested in? Type the number to see their recent 50 tweets, or enter 'exit' to quit: ")
         # member_code = random.randint(1,code)
-        if member_code == 'exit':
+        if member_code.lower() == 'exit':
             print("Bye!")
             sys.exit(0)
         else:
@@ -372,7 +372,7 @@ def execute():
             except:
                 print("Please retry and choose a valid option.")
     browser = input("Wanna open the twitter page on a web browser? Enter 'exit' to quit or enter anything else to browse. ")
-    if browser == 'exit':
+    if browser.lower() == 'exit':
         print("Bye!")
         sys.exit(0)
     else:
