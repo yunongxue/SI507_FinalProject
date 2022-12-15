@@ -1,4 +1,5 @@
-# Fall 2022 SI507 Final Project - Yunong Xue
+# Fall 2022 SI507 Final Project - Congressmen Twitter Stalker
+### *Yunong Xue*
 ## Indroduction
 This project built an interactive command-line-based tool that allows users to retrieve the recent tweets of U.S. Congressmen of their interests. The users are first prompted to enter a Congress number, chamber, and state (optional) to get a list of Congress members affiliated with their selections. Returned congressman information comprises name, state, title, party, gender, the percentage they voted with the party, state rank (Senators only), and district (Representatives only). Then the users are allowed to pick one member to fetch their most recent 50 tweets structured as "[sending time] text" and given the option to open the member's Twitter page on a web browser.
 ## Data Sources
